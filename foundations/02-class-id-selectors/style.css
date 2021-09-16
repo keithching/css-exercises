@@ -1,0 +1,18 @@
+.major {
+    background-color: #e98383da;
+    font-family: Verdana, sans-serif;
+}
+
+.minor {
+    background-color: #47db47;
+    font-weight: bold;
+}
+
+#unique {
+    color: #0000ff;
+    font-size: 36px;
+}
+
+.larger-font {
+    font-size: 24px;
+}
