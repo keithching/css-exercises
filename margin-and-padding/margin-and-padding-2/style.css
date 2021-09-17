@@ -14,20 +14,20 @@ body {
   background: #e3f4ff;
   font-size: 16px;
   padding: 8px;
-  margin: 8px 8px 16px; /* top left-and-right bottom */
+  margin: 0px 0px 8px; /* top left-and-right bottom */
 }
 
 .content {
   background: #e3f4ff;
   padding: 8px;
-  margin: 16px 8px 16px;
+  margin: 8px 0px 8px;
 }
 
 .button {
   background: #e3f4ff;
   padding: 8px;
   text-align: center;
-  margin: 16px 8px 8px;
+  margin: 8px 0px 0px;
 }
 
 button {
