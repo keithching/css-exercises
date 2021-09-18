@@ -5,6 +5,10 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  /* added */
+  /* flex direction set to column for the overall body */
+  display: flex;
+  flex-direction: column;
 }
 
 img {
@@ -16,6 +20,8 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  /* added */
+  padding: 8px 16px;
 }
 
 input {
@@ -24,4 +30,42 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+
+/* added */
+.header, .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+}
+
+.content {
+  /* same as flex: 1 1 0 */
+  /* this item can grow and shrink from flex-basis of 0. fill the container, pushes header and footer to their place */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.footer {
+  background-color: #eeeeee;
+}
+
+.left-links, .right-links {
+  display: flex;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  list-style-type: none;
+}
+
+
+a {
+  text-decoration: none;
+  color: #666;
 }
