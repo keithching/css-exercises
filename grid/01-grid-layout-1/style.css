@@ -1,0 +1,83 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  height: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+
+  /* added code */
+  display: grid;
+  grid-template-columns: 400px 1200px;
+  grid-template-rows: 100px 100px 500px 100px;
+  gap: 15px;
+  justify-content: center; /* justify and align content within the grid container */
+  align-content: center;
+  /* added code */
+}
+
+.container div {
+  padding: 15px;
+  font-size: 32px;
+  font-family: Helvetica;
+  font-weight: bold;
+  color: white;
+  border-radius: 15px;
+}
+
+.header {
+  background-color: #FFDE22;
+
+  /* added code */
+  grid-column-start: 1;
+  grid-column-end: -1;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  /* added code */
+}
+
+.sidebar {
+  background-color: #FF7755;
+
+  /* added code */
+  grid-column: 1 / 2;
+  grid-row: 2 / 4;
+  /* added code */
+}
+
+.nav {
+  background-color: #00DDFF;
+
+  /* added code */
+  grid-column: 2 / -1;
+  grid-row: 2 / 3;
+  /* added code */
+}
+
+.article {
+  background-color: #bccbde;
+
+  /* added code */
+  grid-area: 3 / 2 / 4 / -1;
+  /* added code */
+}
+
+.article p {
+  font-size: 18px;
+  font-family: sans-serif;
+  color: white;
+  text-align: left;
+}
+
+.footer {
+  background-color: #393f4d;
+
+  /* added code */
+  grid-column-start: 1;
+  grid-column-end: -1;
+  grid-row: -2 / -1;
+  /* added code */
+}
