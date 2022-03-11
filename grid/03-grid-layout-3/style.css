@@ -5,6 +5,13 @@
 
 .container {
   text-align: center;
+  /* added code */
+  height: 100vh;
+  display: grid;
+  grid-template-columns: minmax(300px, 1fr) 4fr;
+  grid-template-rows: 2fr 1fr 12fr 1fr;
+  gap: 4px;
+  /* added code */
 }
 
 .container div {
@@ -17,15 +24,36 @@
 
 .header {
   background-color: #393f4d;
+  /* added code */
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-items: space-around;
+  align-items: center;
+  /* added code */
 }
 
 .logo {
+  /* added code */
+  grid-area: 1 / 1 / 2 / 2;
+  justify-self: start;
+  /* added code */
 }
 
 .menu {
+  /* added code */
+  grid-area: 1 / 2 / 2 / 3;
+  /* added code */
 }
 
 .menu ul {
+  /* added code */
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* added code */
 }
 
 .menu ul,
@@ -35,6 +63,15 @@
 
 .sidebar {
   background-color: #FF7755;
+  /* added code */
+  grid-column: 1 / 2;
+  grid-row: 2 / 4;
+
+  display: grid;
+  grid-template-columns: 1;
+  grid-auto-rows: 1fr;
+  gap: 50px;
+  /* added code */
 }
 
 .sidebar .photo {
@@ -46,6 +83,10 @@
 }
 
 .photo  {
+  /* added code */
+  display: grid;
+  place-content: center;
+  /* added code */
 }
 
 .sidebar .side-content {
@@ -53,13 +94,29 @@
   color: black;
   font-size: 16px;
   font-weight: normal;
+
+  /* added code */
+  display: grid;
+  place-content: center;
+  /* added code */
 }
 
 .nav {
   background-color: #FF7755;
+  /* added code */
+  grid-column: 2 / -1;
+  grid-row: 2 / 3;
+  display: grid;
+  align-content: center;
+  /* added code */
 }
 
 .nav ul {
+  /* added code */
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* added code */
 }
 
 .nav ul li {
@@ -69,6 +126,16 @@
 
 .article {
   background-color: #bccbde;
+  /* added code */
+  grid-column: 2 / -1;
+  grid-row: 3 / -2;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-rows: repeat(2, 1fr);
+  gap: 15px;
+  overflow: hidden;
+  /* added code */
 }
 
 .article p {
@@ -82,6 +149,9 @@
   background-color: #FFFFFF;
   color: black;
   text-align: center;
+  /* added code */
+  height: 200px;
+  /* added code */
 }
 
 .card p {
@@ -97,6 +167,12 @@
 
 .footer {
   background-color: #393f4d;
+  /* added code */
+  grid-column: 1 / -1;
+  grid-row: -2 / -1;
+  display: grid;
+  place-content: center;
+  /* added code */
 }
 
 .footer p {
